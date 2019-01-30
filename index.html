@@ -11,11 +11,16 @@
 <body>
 <main>
   <div id="main-container">
-    <header></header>
+    <header>
+      <!-- 宿舍服務中心 -->
+    </header>
 
+    <!php-start>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/image/logo.png" alt="首頁" class="icon-default"> 宿舍服務中心
+        <img src="/image/logo.png" alt="首頁" class="icon-default">
+        <span>宿舍服務中心</span>
       </a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,13 +52,16 @@
         </ul>
       </div>
     </nav>
+    <!-- navbar -->
+    <!php-end>
 
     <div id="main-content">
       <div class="row">
+        <!php-start>
         <div class="col min-hide">
-          <ul class="float-left">
+          <ul class="float-left left-side">
             <p class="title-bg02">宿舍服務</p>
-            <li>Information for International Students</li>
+            <li>Information</li>
             <li>最新消息</li>
             <li>重要行事曆</li>
             <li>認識宿服</li>
@@ -67,9 +75,17 @@
             <li>宿舍自治專區</li>
             <li>住宿問題反映</li>
           </ul>
+          <ul class="float-left left-side">
+            <p class="title-bg02">各項服務業務</p>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <!php-end>
         </div>
 
-        <div id="news" class="col-6">
+        <div id="center-content" class="col-6">
+          <!php-start>
           <img src="/image/news.png" alt="News" class="icon-50">
           <span >
             最新消息 (<a href="#">一般公告</a>、<a href="#">施工消息</a>>、<a href="#">活動資訊</a>、<a href="#">重要行事曆</a>)
@@ -98,30 +114,45 @@
               </tr>
             </tbody>
           </table>
+          <!php-end>
         </div>
 
         <div class="col min-hide">
-          <ul calss="float-right">
-              <p class="title-bg02">常用連結</p>
-              <li>修繕系統</li>
-              <li>抽籤系統</li>
-              <li>押金系統</li>
-              <li>網路系統</li>
-              <li>聯絡電話</li>
-              <li>郵件查詢</li>
-              <li>失物招領</li>
-              <li>校園地圖</li>
-              <li>新生資訊網</li>
-              <li>FB粉絲專頁</li>
-              <li>公車客運資訊</li>
-              <li>校內餐廳資訊</li>
+          <!php-start>
+          <ul class="float-left right-side">
+            <p class="title-bg02">常用連結</p>
+            <li>修繕系統</li>
+            <li>抽籤系統</li>
+            <li>押金系統</li>
+            <li>網路系統</li>
+            <li>聯絡電話</li>
+            <li>郵件查詢</li>
+            <li>失物招領</li>
+            <li>校園地圖</li>
+            <li>新生資訊網</li>
+            <li>FB粉絲專頁</li>
+            <li>公車客運資訊</li>
+            <li>校內餐廳資訊</li>
           </ul>
+          <ul class="float-left right-side">
+            <p class="title-bg02">宣導專區</p>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <!php-end>
         </div>
       </div>
     </div>
 
   </div>
 </main>
+<footer>
+  <p class="copyright">
+    <span>聯絡分機: 57290、57285、57282　傳真: 03-4263925 公務信箱: <a href="mailto:ncu57290@cc.ncu.edu.tw">ncu57290@cc.ncu.edu.tw</a></span>
+    <span>© 2019 <a href="https://github.com/Zone-dev">Zone-dev</a> All Rights Reserved</span>
+  </p>
+</footer>
 <script src="/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="/js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

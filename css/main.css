@@ -7,13 +7,14 @@ body{
 
 main{
   width:100%;
-  margin:50px 0px;
+  margin:25px 0px;
   /* background:greenyellow; */
 }
 
 #main-container{
   margin:0px auto;
   width:95%;
+  /* border-radius: 50px 20px; */
 }
 
 header{
@@ -49,19 +50,23 @@ nav{
   height:50px;
 }
 
+.tools-bar{
+  margin:0px 20px;
+}
+
 .float-left>li{
   float:left;
   clear:both;
 }
 
-.float-right>li{
-  float:right;
-  clear:both;
+.right-side>li,.left-side>li{
+  margin:0px 20px;
 }
 
 .min-show{
   display:block;
 }
+
 .min-hide{
   display:none;
 }
@@ -75,7 +80,7 @@ nav{
   margin:20px auto;
 }
 
-#news{
+#center-content{
   flex: 0 0 100%;
   max-width:100%;
 }
@@ -115,6 +120,15 @@ nav{
 }
 
 
+.copyright, .copyright>a{
+  font-size:12px;
+  opacity: 0.5;
+  color:black;
+}
+.copyright>a{
+  font-weight: bold;
+}
+
 @media only screen and (min-width:465px){
 }
 
@@ -123,7 +137,7 @@ nav{
     width: 100%;
     margin-left:0%;
     }
-  #news{
+  #center-content{
     max-width:50%;
     flex: 0 0 50%;
   }
@@ -135,5 +149,3 @@ nav{
     display:none;
   }
 }
-
-
