@@ -2,19 +2,16 @@ body{
   margin:0px auto;
   text-align: center;
   background:#FFDBAD;
-  /* background:ghostwhite; */
 }
 
 main{
   width:100%;
   margin:25px 0px;
-  /* background:greenyellow; */
 }
 
 #main-container{
   margin:0px auto;
   width:95%;
-  /* border-radius: 50px 20px; */
 }
 
 header{
@@ -24,6 +21,7 @@ header{
 
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 10px 0px;
   /* background-size: cover; */
   /* background: green; */
 }
@@ -71,9 +69,12 @@ nav{
   display:none;
 }
 
-#main-content{
+#main-content, #sub-content{
   background:white;
-  /* background: rgb(147, 120, 184); */
+}
+
+#sub-content{
+  border-radius: 0px 10px;
 }
 
 #main-content>.row>.col,.col-6{
