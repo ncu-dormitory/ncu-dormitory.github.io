@@ -146,6 +146,12 @@ nav{
   .left-side{
     display: block;
   }
+  .min-hide{
+    display:block;
+  }
+  .min-show{
+    display:none;
+  }
 }
 
 @media only screen and (min-width:1280px){
@@ -161,10 +167,6 @@ nav{
     flex: 0 0 50%;
   }
   #main-container{width:80%;}
-  .min-hide{
-    display:block;
-  }
-  .min-show{
-    display:none;
-  }
 }
+
+/* screensiz.es */
