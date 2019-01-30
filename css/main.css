@@ -22,7 +22,7 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px 0px;
-  /* background-size: cover; */
+  background-size: cover;
   /* background: green; */
 }
 
@@ -55,6 +55,14 @@ nav{
 .float-left>li{
   float:left;
   clear:both;
+}
+
+.right-side{
+  display:none;
+}
+
+.left-side{
+  display:none;
 }
 
 .right-side>li,.left-side>li{
@@ -130,14 +138,24 @@ nav{
   font-weight: bold;
 }
 
-@media only screen and (min-width:465px){
+@media only screen and (min-width:800px){
+  #center-content{
+    max-width:100%;
+    flex: 0 0 68%;
+  }
+  .left-side{
+    display: block;
+  }
 }
 
-@media only screen and (min-width:680px){
+@media only screen and (min-width:1280px){
+  .right-side{
+    display: block;
+  }
   #customers{
     width: 100%;
     margin-left:0%;
-    }
+  }
   #center-content{
     max-width:50%;
     flex: 0 0 50%;
