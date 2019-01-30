@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Service center</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
 </head>
 <body>
 <main>
@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="首頁" width="30px" height="30px"> 宿舍服務中心
+        <img src="/image/logo.png" alt="首頁" class="icon-default"> 宿舍服務中心
       </a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
   
       <div class="navbar-collapse collapse" id="navbarColor01" style="">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link min-hide" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item min-hide">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item  min-hide">
+          <li class="nav-item min-hide">
             <a class="nav-link" href="https://www.ncu.edu.tw">中央大學</a>
           </li>
-          <li class="nav-item  min-hide">
+          <li class="nav-item min-hide">
             <a class="nav-link" href="http://osa.ncu.edu.tw/">學生事務處</a>
           </li>
-          <li class="nav-item  min-hide">
+          <li class="nav-item min-hide">
             <a class="nav-link" href="http://140.115.183.185/ncu7221/">生活輔導組</a>
           </li>
           <li class="nav-item min-show">
@@ -47,18 +47,6 @@
         </ul>
       </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a href="" class="navbar-brand nav-link">
-        <img src="./logo.png" calss="relative" alt="home" width="30px" height="30px">
-      </a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="#" class="nav-link">content01</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">content02</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">content03</a></li>
-        </ul>
-      </div>
-    </nav> -->
 
     <div id="main-content">
       <div class="row">
@@ -81,8 +69,28 @@
           </ul>
         </div>
 
-        <div class="col-6">
-          b
+        <div id="news" class="col-6">
+          <img src="/image/news.png" alt="News" class="icon-50">
+          <span >
+            最新消息 (<a href="#">一般公告</a>、<a href="#">施工消息</a>>、<a href="#">活動資訊</a>、<a href="#">重要行事曆</a>)
+          </span>
+          <table id="customers">
+            <tr>
+              <th>公告日期</th>
+              <th>公告類別</th>
+              <th>公告標題</th>
+            </tr>
+            <tr>
+              <td>2019-01-30</td>
+              <td>重要公告</td>
+              <td>開發者很帥 開發者很帥 開發者很帥 開發者很帥 開發者很帥 開發者很帥 開發者很帥</td>
+            </tr>
+            <tr>
+              <td>2019-01-10</td>
+              <td>一般公告</td>
+              <td>開發者好累 開發者好累 開發者好累 開發者好累 開發者好累 開發者好累 開發者好累</td>
+            </tr>
+          </table>
         </div>
 
         <div class="col min-hide">
@@ -107,8 +115,8 @@
 
   </div>
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="/js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
